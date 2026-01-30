@@ -3,7 +3,8 @@
 Minimalist personal website built with HTML, CSS, and JavaScript.
 
 ## Live
-[https://tvuj-username.github.io/nazev-repa/](https://pilsenhorn.github.io/MM
+https://pilsenhorn.github.io/MM/
+
 
 ## Features
 - Responsive layout
