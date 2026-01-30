@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michal Mikulenka | Web Developer</title>
+  <meta name="description" content="Junior Web Developer focused on HTML, CSS, JavaScript, React, Next.js, and Django. Building clean, accessible, and maintainable web applications.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- LOGO doplnit -->
+
+
+    <!-- NAVIGATION -->
+    <div class="header-inner">
+      <div class="nav-left">Logo</div>
+
+      <nav class="nav-center">
+        <button onclick="openModal('aboutModal')">About</button>
+        <button onclick="openModal('projectsModal')">Projects</button>
+        <button onclick="openModal('faqModal')">FAQ</button>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://github.com/Pilsenhorn">GitHub</a>
+        <a href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
+        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">E-mail</a>
+
+
+        <!-- CZ -->
+        <a href="/index-cs.html">CZ</a> 
+
+ 
+
+      </div>
+    </div>
+
+    <button class="hamburger" aria-label="Open menu">☰</button>
+    
+    <!-- MOBILE NAVIGATION -->
+
+    <nav class="mobile-menu">
+      <button class="menu-main" onclick="openModal('aboutModal')">About</button>
+      <button class="menu-main" onclick="openModal('projectsModal')">Projects</button>
+      <button class="menu-main" onclick="openModal('faqModal')">FAQ</button>
+      <a class="menu-secondary" href="https://github.com/Pilsenhorn">GitHub</a>
+      <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
+      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">E-mail</a>
+    </nav>
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Quality is fancy</h1>
+
+          <a href="mailto:MichalMikulenka@proton.me" class="cta-primary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="three-columns">
+
+      <div class="panel">
+        <h2>About</h2>
+        <p>I am a web developer with a background in classical music ...</p>
+        <button onclick="openModal('aboutModal')">Read more</button>
+      </div>
+
+      <div class="panel">
+        <h2>Projects</h2>
+        <p>Do you want to see my projects?</p>
+        <button onclick="openModal('projectsModal')">Read more</button>
+      </div>
+
+      <div class="panel">
+        <h2>FAQ</h2>
+        <p>Common questions and answers</p>
+        <button onclick="openModal('faqModal')">Read more</button>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <small>
+        Designed &amp; built by Michal Mikulenka Web Developer
+      </small>
+      <small>
+        All rights reserved.
+      </small>
+      <small>
+      © 2026 Michal Mikulenka  
+      </small>
+      
+   
+    </div>
+  </footer>
+
+
+
+  <!-- ABOUT MODAL -->
+<div id="aboutModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close" onclick="closeModal('aboutModal')">✕</button>
+    <h2>About Me</h2>
+    <p>
+      I am a web developer with a background in classical music and a passion
+      for creating clean, accessible, and maintainable web applications.
+    </p>
+    <p>
+      My focus is on clarity, long-term sustainability, and building things
+      that make sense both technically and humanly.
+    </p>
+    <p>
+      I am constantly learning and improving my skills to stay up-to-date
+      with the latest web technologies and best practices.
+    </p>
+    <p>
+      If you are looking for a dedicated and passionate web developer,
+      feel free to reach out!
+    </p>
+    <p>
+      My professional motto: "Quality is fancy."
+    </p>
+    <p>
+      My personal motto: "Everything bad is good for something."
+    </p>
+    <p>
+      Just now I live in Prague, Czech Republic. Bud.. who knows what the future brings? My dreams 
+      are to work remotely from different places around the world. Because I love mountains and nature as well as 
+      cities as the oceans or beaches.
+    </p>
+    <p>
+      Looking for: Junior Web Developer position.
+      And I'm open to new opportunities!
+      I'm open to relocation as well.
+    </p>
+    <p>
+      Available for: Full-time, Part-time, Freelance.
+    </p>
+    <p>
+      Tech stack: HTML, CSS, JavaScript, React, Next.js, Django.
+    </p>
+  </div>
+</div>
+
+<!-- PROJECTS MODAL -->
+<div id="projectsModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close" onclick="closeModal('projectsModal')">✕</button>
+    <h2>Projects</h2>
+    <p><strong>Farrier</strong> – Film production website</p>
+    <p>
+      Tech: Next.js, Tailwind CSS, Vercel<br>
+      <a href="https://farrier.vercel.app" target="_blank" rel="noopener noreferrer">Live</a> ·
+      <a href="https://github.com/Pilsenhorn" target="_blank" rel="noopener noreferrer">Code</a>
+    </p>
+  </div>
+</div>
+
+<!-- FAQ MODAL -->
+<div id="faqModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close" onclick="closeModal('faqModal')">✕</button>
+    <h2>FAQ</h2>
+    <p><strong>Remote work?</strong> Yes.</p>
+    <p><strong>Learning new tech?</strong> Always.</p>
+    <p><strong>Freelance?</strong> Depends on scope.</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
