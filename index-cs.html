@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Michal Mikulenka | Web Developer</title>
+  <meta name="description" content="Webový vývojář zaměřený na HTML, CSS, JavaScript, React, Next.js a Django. Tvorba čistých, přístupných a dlouhodobě udržitelných webových aplikací.">
+
+  <meta property="og:title" content="Michal Mikulenka | Web Developer">
+  <meta property="og:description" content="Webový vývojář se zaměřením na čisté, přístupné a udržitelné webové aplikace.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pilsenhorn.github.io/MM/">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header-inner">
+      <div class="nav-left">
+        Logo
+      </div>
+
+      <nav class="nav-center">
+        <button onclick="openModal('aboutModal')">O mně</button>
+        <button onclick="openModal('projectsModal')">Projekty</button>
+        <button onclick="openModal('faqModal')">FAQ</button>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://github.com/Pilsenhorn">GitHub</a>
+        <a href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
+        <a href="mailto:MichalMikulenka@proton.me" aria-label="Kontaktovat mě">E-mail</a>
+
+        <!-- EN -->
+        <a href="/index.html">EN</a>
+      </div>
+    </div>
+
+    <button class="hamburger" aria-label="Otevřít menu">☰</button>
+
+    <!-- MOBILE MENU -->
+    <nav class="mobile-menu">
+      <button class="menu-main" onclick="openModal('aboutModal')">O mně</button>
+      <button class="menu-main" onclick="openModal('projectsModal')">Projekty</button>
+      <button class="menu-main" onclick="openModal('faqModal')">FAQ</button>
+      <a class="menu-secondary" href="https://github.com/Pilsenhorn">GitHub</a>
+      <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
+      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me" aria-label="Kontaktovat mě">E-mail</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Quality is fancy</h1>
+          <a href="mailto:MichalMikulenka@proton.me" class="cta-primary" aria-label="Kontaktovat mě">Napiš mi</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="three-columns">
+
+      <div class="panel">
+        <h2>O mně</h2>
+        <p>Přecházím z profesionální hudební dráhy do světa IT vývoje.</p>
+        <button aria-label="Číst více o mně" onclick="openModal('aboutModal')">Read more...</button>
+      </div>
+
+      <div class="panel">
+        <h2>Projekty</h2>
+        <p>Ukázky reálných projektů a použitého stacku.</p>
+        <button aria-label="Číst více o projektech" onclick="openModal('projectsModal')">Read more...</button>
+      </div>
+
+      <div class="panel">
+        <h2>FAQ</h2>
+        <p>Časté otázky ohledně spolupráce a dostupnosti.</p>
+        <button aria-label="Číst více v sekci FAQ" onclick="openModal('faqModal')">Read more...</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 Navrženo a vytvořeno – Michal Mikulenka</small>
+      <small>Všechna práva vyhrazena.</small>
+    </div>
+  </footer>
+
+  <!-- ABOUT MODAL -->
+  <div id="aboutModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Zavřít" onclick="closeModal('aboutModal')">✕</button>
+      <div class="modal-body">
+        <h2>O mně</h2>
+        <br />
+        <p>
+          Jsem webový vývojář, který přechází z profesionální kariéry v oblasti klasické hudby.
+          Působil jsem jako sólový hornista v jednom z nejstarších symfonických orchestrů v Evropě,
+          kde byly disciplína, přesnost a dlouhodobá koncentrace každodenní realitou.
+        </p>
+        <br />
+        <p>
+          K hudbě mě od dětství vedl můj otec. Díky tomu jsem si vybudoval hluboký respekt k řemeslu,
+          systematické práci a tiché kvalitě bez potřeby okázalosti.
+        </p>
+        <br />
+        <p>
+          Ze zdravotních důvodů jsem se vědomě rozhodl opustit svět profesionálního hraní
+          a přejít do oblasti softwarového vývoje. Nešlo o útěk, ale o promyšlený přesun
+          do prostředí, kde mohu dlouhodobě tvořit, přemýšlet a růst udržitelným způsobem.
+        </p>
+        <br />
+        <p>
+          Ve vývoji se soustředím na přehlednost, udržovatelnost a smysluplnou strukturu.
+          Baví mě vytvářet řešení, která dávají smysl technicky i lidsky.
+        </p>
+        <br />
+        <p>
+          Profesní motto: <em>„Quality is fancy.“</em><br>
+          Osobní motto: Všechno špatně k něčemu dobré.
+        </p>
+        <br />
+        <p>
+          Aktuálně žiji v Praze. Jsem otevřený remote spolupráci, relokaci i mezinárodním projektům.
+        </p>
+        <br />
+        <p>
+          Tech stack: HTML, CSS, JavaScript, React, Next.js, Django.
+        </p>
+        <br />
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS MODAL -->
+  <div id="projectsModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Zavřít" onclick="closeModal('projectsModal')">✕</button>
+      <h2>Projekty</h2>
+      <p><strong>Farrier</strong> – web pro filmovou produkci</p>
+      <p>
+        Technologie: Next.js, Tailwind CSS, Vercel<br>
+        <a href="https://farrier.vercel.app" target="_blank" rel="noopener noreferrer">Live</a> ·
+        <a href="https://github.com/Pilsenhorn" target="_blank" rel="noopener noreferrer">Kód</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FAQ MODAL -->
+  <div id="faqModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Zavřít" onclick="closeModal('faqModal')">✕</button>
+      <h2>FAQ</h2>
+
+      <details>
+        <summary><strong>Relokace?</strong></summary>
+        <p>Ano, jsem otevřený relokaci. Preferuji remote nebo hybridní spolupráci.</p>
+      </details>
+
+      <details>
+        <summary><strong>Remote práce?</strong></summary>
+        <p>Ano, remote spolupráce je možná.</p>
+      </details>
+
+      <details>
+        <summary><strong>Dostupnost?</strong></summary>
+        <p>Aktivně hledám pozici juniorního webového vývojáře a nové příležitosti.</p>
+      </details>
+
+      <details>
+        <summary><strong>Preferovaný stack?</strong></summary>
+        <p>HTML, CSS, JavaScript, React, Next.js, Django.</p>
+      </details>
+    </div>
+  </div>
+
+</body>
+</html>

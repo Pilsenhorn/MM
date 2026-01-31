@@ -85,13 +85,13 @@ body {
 
 .nav-center {
   display: flex;
-  gap: 3rem
+  gap: 1.5rem
 
 }
 .nav-right {
   justify-self: end;
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 /* ========================
@@ -127,14 +127,11 @@ body {
   color: var(--text);
   font-size: 1.6rem;
   cursor: pointer;
-  display: flex;
+  
+
   align-items: center;
   justify-content: center;
-  position: absolute;
-
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+ 
 }
 
 /* =========================
@@ -389,6 +386,15 @@ body {
   .nav-center,
   .nav-right {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .hero-content {
