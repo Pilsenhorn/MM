@@ -201,7 +201,6 @@ body {
 
 .hero {
 
-  /* tohle mi prostě nesedí, přijde mi, že to není uprostřed.*/
   min-height: 100vh;
  
   position: relative;
@@ -327,11 +326,14 @@ body {
   border: 1px solid var(--border);
   border-radius: 16px;
 
-  padding: 2rem;
+  width: 90%;
   max-width: 600px;
-  width: calc(100% - 2rem);
+  max-height: 90vh;
 
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-close {
@@ -344,6 +346,12 @@ body {
   color: var(--muted);
   font-size: 1.25rem;
   cursor: pointer;
+}
+
+.modal-body {
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 /* =========================
@@ -376,7 +384,12 @@ body {
 
   .hamburger {
     display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
+
 
   .hero-content {
     margin-left: 2rem;
@@ -388,13 +401,15 @@ body {
 
   .modal {
     align-items: flex-start;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .modal-content {
     max-height: calc(100vh - 2rem);
-    overflow-y: auto;
+    margin-top: 1rem;
     overscroll-behavior: contain;
+  }
+
+  .modal-body {
+    max-height: calc(100vh - 4rem);
   }
 }
