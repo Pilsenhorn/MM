@@ -12,12 +12,15 @@
 <body>
 
   <header class="header">
-    <!-- LOGO doplnit -->
-
 
     <!-- NAVIGATION -->
+
     <div class="header-inner">
-      <div class="nav-left">Logo</div>
+      <div class="nav-left">
+          <!-- LOGO doplnit - je ve složce s předchozím projektem -->
+        Logo
+      
+      </div>
 
       <nav class="nav-center">
         <button onclick="openModal('aboutModal')">About</button>
@@ -28,7 +31,7 @@
       <div class="nav-right">
         <a href="https://github.com/Pilsenhorn">GitHub</a>
         <a href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">E-mail</a>
+        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">Message</a>
 
 
         <!-- CZ -->
@@ -49,7 +52,7 @@
       <button class="menu-main" onclick="openModal('faqModal')">FAQ</button>
       <a class="menu-secondary" href="https://github.com/Pilsenhorn">GitHub</a>
       <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">E-mail</a>
+      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">Message</a>
     </nav>
   </header>
 
@@ -99,16 +102,11 @@
     <div class="container">
 
       <small>
-        Designed &amp; built by Michal Mikulenka Web Developer
+        © 2026 Designed &amp; built by Michal Mikulenka | Web Developer
       </small>
       <small>
         All rights reserved.
       </small>
-      <small>
-      © 2026 Michal Mikulenka  
-      </small>
-      
-   
     </div>
   </footer>
 
@@ -119,41 +117,50 @@
   <div class="modal-content">
     <button class="modal-close" aria-label="Close" onclick="closeModal('aboutModal')">✕</button>
     <h2>About Me</h2>
+    <br />
     <p>
       I am a web developer with a background in classical music and a passion
       for creating clean, accessible, and maintainable web applications.
     </p>
+    <br />
     <p>
       My focus is on clarity, long-term sustainability, and building things
       that make sense both technically and humanly.
     </p>
+    <br />
     <p>
       I am constantly learning and improving my skills to stay up-to-date
       with the latest web technologies and best practices.
     </p>
+    <br />
     <p>
       If you are looking for a dedicated and passionate web developer,
       feel free to reach out!
     </p>
+    <br />
     <p>
       My professional motto: "Quality is fancy."
     </p>
     <p>
       My personal motto: "Everything bad is good for something."
     </p>
+    <br />
     <p>
       Just now I live in Prague, Czech Republic. Bud.. who knows what the future brings? My dreams 
       are to work remotely from different places around the world. Because I love mountains and nature as well as 
       cities as the oceans or beaches.
     </p>
+    <br />
     <p>
       Looking for: Junior Web Developer position.
       And I'm open to new opportunities!
       I'm open to relocation as well.
     </p>
+    <br />
     <p>
       Available for: Full-time, Part-time, Freelance.
     </p>
+    <br />
     <p>
       Tech stack: HTML, CSS, JavaScript, React, Next.js, Django.
     </p>
@@ -179,9 +186,43 @@
   <div class="modal-content">
     <button class="modal-close" aria-label="Close" onclick="closeModal('faqModal')">✕</button>
     <h2>FAQ</h2>
-    <p><strong>Remote work?</strong> Yes.</p>
-    <p><strong>Learning new tech?</strong> Always.</p>
-    <p><strong>Freelance?</strong> Depends on scope.</p>
+
+    <details>
+      <summary><strong>Relocation?</strong></summary>
+      <p>Open to relocation, but prefer remote work or hybrid.</p>
+    </details>   
+
+    <details>
+      <summary><strong>Remote work?</strong></summary>
+      <p>Yes, I am open to remote work opportunities.</p>
+    </details>
+
+    <details>
+      <summary><strong>Available for hire?</strong></summary>
+      <p>Yes, I am actively seeking a Junior Web Developer position.</p>
+    </details>
+
+    <details>
+      <summary><strong>Preferred tech stack?</strong></summary>
+      <p>HTML, CSS, JavaScript, React, Next.js, Django.</p>
+    </details>
+    
+    <details>
+      <summary><strong>Work hours?</strong></summary>
+      <p>Flexible, open to full-time or part-time.</p>
+    </details>
+
+    <details>
+      <summary><strong>What is your professional motto?</strong></summary>
+      <p>"Quality is more then quantity"</p>
+      <p>"Everything bad is good for something."</p>
+    </details>
+
+    <details>
+      <summary><strong>Pricing?</strong></summary>
+      <p>Depends on project scope and required technologies.</p>  
+    </details>
+
   </div>
 </div>
 

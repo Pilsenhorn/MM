@@ -282,6 +282,7 @@ body {
 
 .panel h2 {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .panel p {
@@ -294,6 +295,12 @@ body {
   border: none;
   color: var(--accent);
   cursor: pointer;
+}
+
+.panel button:hover {
+  text-transform: uppercase;
+  transform: scale(1.05);
+  color: var(--hover-accent);
 }
 
 /* =========================
@@ -357,8 +364,6 @@ body {
 }
 
 
-
-
 /* =========================
    RESPONSIVE
    ========================= */
@@ -379,5 +384,17 @@ body {
 
   .three-columns {
     grid-template-columns: 1fr;
+  }
+
+  .modal {
+    align-items: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .modal-content {
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 }
