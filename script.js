@@ -1,3 +1,5 @@
+
+
 function openModal(id) {
   const modal = document.getElementById(id);
   if (!modal) return;
@@ -46,7 +48,7 @@ hamburger.addEventListener("click", (e) => {
   hamburger.textContent = mobileMenu.classList.contains("open") ? "✕" : "☰";
 });
 
-dokument.addEventListener("click", () => {
+document.addEventListener("click", () => {
   mobileMenu.classList.remove("open");
   hamburger.textContent = "☰";
 });

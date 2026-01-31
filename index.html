@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michal Mikulenka | Web Developer</title>
-  <meta name="description" content="Junior Web Developer focused on HTML, CSS, JavaScript, React, Next.js, and Django. Building clean, accessible, and maintainable web applications.">
+  <meta name="description" content="Web Developer focused on HTML, CSS, JavaScript, React, Next.js, and Django. Building clean, accessible, and maintainable web applications.">
+
+  <meta property="og:title" content="Michal Mikulenka | Web Developer">
+  <meta property="og:description" content="Web Developer focused on HTML, CSS, JavaScript, React, Next.js, and Django. Building clean, accessible, and maintainable web applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pilsenhorn.github.io/MM/">
+
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -31,10 +37,10 @@
       <div class="nav-right">
         <a href="https://github.com/Pilsenhorn">GitHub</a>
         <a href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">Message</a>
+        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something" aria-label="Contact me">Message</a>
 
 
-        <!-- CZ -->
+        <!-- CZ to do -->
         <a href="/index-cs.html">CZ</a> 
 
  
@@ -52,7 +58,7 @@
       <button class="menu-main" onclick="openModal('faqModal')">FAQ</button>
       <a class="menu-secondary" href="https://github.com/Pilsenhorn">GitHub</a>
       <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something">Message</a>
+      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something" aria-label="Contact me">Message</a>
     </nav>
   </header>
 
@@ -66,7 +72,7 @@
         <div class="hero-content">
           <h1>Quality is fancy</h1>
 
-          <a href="mailto:MichalMikulenka@proton.me" class="cta-primary">Get in touch</a>
+          <a href="mailto:MichalMikulenka@proton.me" class="cta-primary" aria-label="Contact me">Get in touch</a>
         </div>
       </div>
     </section>
@@ -76,19 +82,19 @@
       <div class="panel">
         <h2>About</h2>
         <p>I am a web developer with a background in classical music ...</p>
-        <button onclick="openModal('aboutModal')">Read more</button>
+        <button aria-label="Read more about me" onclick="openModal('aboutModal')">Read more</button>
       </div>
 
       <div class="panel">
         <h2>Projects</h2>
         <p>Do you want to see my projects?</p>
-        <button onclick="openModal('projectsModal')">Read more</button>
+        <button aria-label="Read more about projects" onclick="openModal('projectsModal')">Read more</button>
       </div>
 
       <div class="panel">
         <h2>FAQ</h2>
         <p>Common questions and answers</p>
-        <button onclick="openModal('faqModal')">Read more</button>
+        <button aria-label="Read more about FAQ" onclick="openModal('faqModal')">Read more</button>
       </div>
 
     </section>
@@ -174,7 +180,7 @@
   <div class="modal-content">
     <button class="modal-close" aria-label="Close" onclick="closeModal('projectsModal')">✕</button>
     <h2>Projects</h2>
-    <p><strong>Farrier</strong> – Film production website</p>
+    <p><strong>Farrier</strong> movie production - website</p>
     <p>
       Tech: Next.js, Tailwind CSS, Vercel<br>
       <a href="https://farrier.vercel.app" target="_blank" rel="noopener noreferrer">Live</a> ·
