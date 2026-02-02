@@ -6,14 +6,54 @@
 
   <title>Michal Mikulenka | Web Developer</title>
   <meta name="description" content="Webový vývojář zaměřený na HTML, CSS, JavaScript, React, Next.js a Django. Tvorba čistých, přístupných a dlouhodobě udržitelných webových aplikací.">
+  <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="Michal Mikulenka | Web Developer">
   <meta property="og:description" content="Webový vývojář se zaměřením na čisté, přístupné a udržitelné webové aplikace.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pilsenhorn.github.io/MM/">
+  <meta property="og:url" content="https://pilsenhorn.github.io/MM/index-cs.html">
+
+  <link rel="canonical" href="https://pilsenhorn.github.io/MM/index-cs.html">
+  <link rel="alternate" hreflang="cs" href="https://pilsenhorn.github.io/MM/index-cs.html" />
+  <link rel="alternate" hreflang="en" href="https://pilsenhorn.github.io/MM/" />
+
 
   <link rel="stylesheet" href="styles.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michal Mikulenka",
+    "jobTitle": "Web Developer",
+    "url": "https://pilsenhorn.github.io/MM/index-cs.html",
+    "sameAs": [
+      "https://github.com/Pilsenhorn",
+      "https://www.linkedin.com/in/michal-mikulenka-4b8939330"
+    ],
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Django"
+    ],
+    "description": "Webový vývojář zaměřený na HTML, CSS, JavaScript, React, Next.js a Django. Tvorba čistých, přístupných a dlouhodobě udržitelných webových aplikací."
+  }
+</script>
+
+  
   <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -32,12 +72,19 @@
       </nav>
 
       <div class="nav-right">
-        <a href="https://github.com/Pilsenhorn">GitHub</a>
-        <a href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-        <a href="mailto:MichalMikulenka@proton.me" aria-label="Kontaktovat mě">E-mail</a>
+        <a href="https://github.com/Pilsenhorn" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/michal-mikulenka-4b8939330" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:MichalMikulenka@proton.me?subject=I%20Want%20to%20Hire%20You%20or%20I%20need%20to%20Ask%20You%20Something" aria-label="Contact me">
+          <i class="fa-brands fa-at"></i>
+        </a>
 
         <!-- EN -->
-        <a href="./index.html">EN</a>
+
+        <a href="./index.html" aria-label="English version">🇬🇧</a>
 
       </div>
     </div>
@@ -49,9 +96,21 @@
       <button class="menu-main" onclick="openModal('aboutModal')">O mně</button>
       <button class="menu-main" onclick="openModal('projectsModal')">Projekty</button>
       <button class="menu-main" onclick="openModal('faqModal')">FAQ</button>
-      <a class="menu-secondary" href="https://github.com/Pilsenhorn">GitHub</a>
-      <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330">LinkedIn</a>
-      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me" aria-label="Kontaktovat mě">E-mail</a>
+
+      <a class="menu-secondary" href="https://github.com/Pilsenhorn" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i> 
+      </a>
+
+      <a class="menu-secondary" href="https://linkedin.com/in/michal-mikulenka-4b8939330" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i> 
+      </a>
+
+      <a class="menu-secondary" href="mailto:MichalMikulenka@proton.me" aria-label="Contact me">
+        <i class="fa-solid fa-at"></i> 
+      </a>
+
+      <a class="menu-secondary" href="./index.html" aria-label="English version">🇬🇧</a>
+  
     </nav>
   </header>
 
@@ -100,45 +159,121 @@
   <!-- ABOUT MODAL -->
   <div id="aboutModal" class="modal" aria-hidden="true">
     <div class="modal-content">
+      <h2>Jmenuji se Michal Mikulenka</h2>
       <button class="modal-close" aria-label="Zavřít" onclick="closeModal('aboutModal')">✕</button>
       <div class="modal-body">
-        <h2>O mně</h2>
-        <br />
-        <p>
-          Jsem webový vývojář, který přechází z profesionální kariéry v oblasti klasické hudby.
-          Působil jsem jako sólový hornista v jednom z nejstarších symfonických orchestrů v Evropě,
-          kde byly disciplína, přesnost a dlouhodobá koncentrace každodenní realitou.
-        </p>
-        <br />
-        <p>
-          K hudbě mě od dětství vedl můj otec. Díky tomu jsem si vybudoval hluboký respekt k řemeslu,
-          systematické práci a tiché kvalitě bez potřeby okázalosti.
-        </p>
-        <br />
-        <p>
-          Ze zdravotních důvodů jsem se vědomě rozhodl opustit svět profesionálního hraní
-          a přejít do oblasti softwarového vývoje. Nešlo o útěk, ale o promyšlený přesun
-          do prostředí, kde mohu dlouhodobě tvořit, přemýšlet a růst udržitelným způsobem.
-        </p>
-        <br />
-        <p>
-          Ve vývoji se soustředím na přehlednost, udržitelnost a smysluplnou strukturu.
-          Baví mě vytvářet řešení, která dávají smysl technicky i lidsky.
-        </p>
-        <br />
-        <p>
-          Profesní motto: <em>„Quality is fancy.“</em><br>
-          Osobní motto: <em>Všechno špatně k něčemu dobré.</em>
-        </p>
-        <br />
-        <p>
-          Aktuálně žiji v Praze. Jsem otevřený remote spolupráci, relokaci i mezinárodním projektům.
-        </p>
-        <br />
-        <p>
-          <strong>Tech stack:</strong> HTML, CSS, JavaScript, React, Next.js, Django.
-        </p>
-        <br />
+        <article class="project-card">
+          <h3>Dvacet let jsem žil v hudbě.</h3>
+          <br />
+          <h4>A pak přišlo ticho.</h4>
+          <br />
+          <p>
+          Tvořil jsem dřív, než jsem chápal, co to slovo znamená.
+          </p>
+          <p>
+            Jako dítě jsem seděl u klavíru, kreslil, sportoval. 
+            Ruce i hlava byly neustále v pohybu.
+          </p>
+          <p>
+            Ne proto, že bych musel. Protože to jinak nešlo.
+          </p>
+          <br />
+          <p>
+            Na základní umělecké škole jsem postupně prošel hrou na klavír, 
+            na trumpetu, na kytaru a na konec i na lesní roh.
+          </p>
+          <p>
+            Právě lesní roh mi byl nabídnut jako alternativa k přijetí na konzervatoř.
+          </p>
+          <br />
+          <p>
+            Z náhody se stal směr.
+          </p>
+          <br />
+          <p>
+            Studium šlo snadno. Až podezřele snadno.
+          </p>
+          <p>
+            Na škole jsem neměl konkurenci, mimo ni už ano.
+          </p>
+          <p>
+            Poprvé jsem pochopil, že talent nastačí. Že skutečná hodnota
+            se ukáže až v tlaku.
+          </p>
+          <br />
+          <p>
+            Ve svých 17 letech jsem uspěl v konkurzu na zástupce vedoucího skupiny 
+            lesních rohů v Karlovarském symfonickém orchestru.
+          </p>
+          <p>
+            Po absolvování konzervatoře jsem nastoupil na akademii múzických umění, 
+            ale kvůli stálému zaměstnání jsem školu opustil.
+          </p>
+          <br />
+          <p>
+            Následně jsem se stal solohornistou v orchestru v Mariánských Lázních -
+            v jednom z nejstarších orchestrů v Evropě.
+          </p>
+          <br />
+          <p>
+            Navenek sen.
+          </p>
+          <p>
+            Uvnitř rutina, odpovědnost, tlak.
+          </p>
+          <p>
+            A tělo, které po dvaceti letech služby začalo říkat <em>dost</em>.
+          </p>
+          <br />
+          <p>
+            Zdravotní důvody mě přinutily odejít.
+          </p>
+          <p>
+            Ne proto, že bych chtěl změnu.
+          </p>
+          <p>
+            Ale protože jsem je nemohl ignorovat.
+          </p>
+          <br />
+          <p>
+            V IT vývoji jsem našel něco překvapivě známého.
+          </p>
+          <p>
+            Strukturu. Rytmus. Pravidla. Ticho mezi jednotlivými prvky.
+          </p>
+          <p>
+            Programování pro mě není útěk z hudby. Je to její pokračování jen jiným jazykem.
+          </p>
+          <br />
+          <p>
+            Absolvoval jsem rekvalifikační kurz zaměřený na Python. Součástí kurzu byly i FrontEndové
+            technologie - HTML, CSS, JavaScript, React.
+          </p>
+          <p>
+            Ale dovednosti nejsou to hlavní.
+          </p>
+          <br />
+          <p>
+            Mým posláním je tvořit.
+          </p>
+          <p>
+            Smysluplně. Klidně. Dlouhodobě.
+          </p>
+          <br />
+          <p>
+            Nevěřím na křiklavé weby ani na reklamní tahy typu <em>"Web, který vydělává..."</em>
+          </p>
+          <p>
+            Nevěřím na krátkodobé efekty a agresivní reklamu.
+          </p>
+          <p>
+            Věřím na kvalitu, která obstojí v čase.
+          </p>
+          <br />
+          <p>
+            Pokud hledáš partnera, ne dodavatele - možná si budeme rozumět.
+          </p>
+        </article>
       </div>
     </div>
   </div>
@@ -148,13 +283,68 @@
     <div class="modal-content">
       <button class="modal-close" aria-label="Zavřít" onclick="closeModal('projectsModal')">✕</button>
       <h2>Projekty</h2>
-      <p><strong>Farrier film production</strong> – web pro filmovou produkci</p>
-      <p>
-        Technologie: Next.js, Tailwind CSS, Vercel
-        <br />
-        <a href="https://farrier.vercel.app" target="_blank" rel="noopener noreferrer">Live</a> ·
-        <a href="https://github.com/Pilsenhorn" target="_blank" rel="noopener noreferrer">Kód</a>
-      </p>
+
+      <div class="modal-body">
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+
+          <article class="project-card">
+            <h3>Farrier</h3>
+            <p class="project-desc">
+              Webová stránka audio-vizuálního studia
+            </p>
+            <p class="project-role">
+              Role: Frontend, layout, deploy
+            </p>
+            <p class="project-stack">
+              Technologie: Next.js, TailWind CSS, Vercel
+            </p>
+
+            <div class="project-links">
+              <a href="https://farrier.vercel.app" target="_blank" rel="noopener noreferrer">Live</a> 
+              <a href="https://github.com/Pilsenhorn" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+
+          <article class="project-card">
+            <h3>Denisa Mrázková</h3>
+            <p class="project-desc">
+              Mini e-shop pro designérku a koučku
+            </p>
+            <p class="project-role">
+              Role: Frontend, Backend 
+            </p>
+            <p class="project-stack">
+              Technologie: Next.js, Django Rest, PostgreSQL
+            </p>
+            <div class="project-links">
+              <span>Ve vývoji</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Shizzle Rap</h3>
+            <p class="project-desc">
+              Webová stránka rapové kapely
+            </p>
+            <p class="project-role">
+              Role: Frontend
+            </p>
+            <p class="project-stack">
+              Technologie: HTML, CSS, JavaScript
+            </p>
+            <div class="project-links">
+              <span>Ve vývoji</span>
+            </div>
+          </article>
+
+
+        </div>
+      </div>
     </div>
   </div>
 
@@ -164,25 +354,47 @@
       <button class="modal-close" aria-label="Zavřít" onclick="closeModal('faqModal')">✕</button>
       <h2>FAQ</h2>
 
-      <details>
-        <summary><strong>Relokace?</strong></summary>
-        <p>Ano, jsem otevřený relokaci. Preferuji remote nebo hybridní spolupráci.</p>
-      </details>
+        <div class="modal-body">
+          <div class="project-card">
 
-      <details>
-        <summary><strong>Remote práce?</strong></summary>
-        <p>Ano, remote spolupráce je možná.</p>
-      </details>
+            <details>
+              <summary><strong>Děláš jen weby, nebo i něco víc?</strong></summary>
+              <p><em>Web je jen výsledek. Spolupráce začíná pochopením smyslu, struktury a kontextu. Pokud má vzniknout kvalitní práce, řešíme víc než jen „stránky“.</em></p>
+            </details>
 
-      <details>
-        <summary><strong>Dostupnost?</strong></summary>
-        <p>Aktivně hledám pozici juniorního webového vývojáře a nové příležitosti.</p>
-      </details>
+            <details>
+              <summary><strong>Hodíš se pro každého?</strong></summary>
+              <p><em>Ne. A je to záměr. Nejlépe funguje spolupráce s lidmi, kteří hledají kvalitu, ne rychlá řešení.</em></p>
+            </details>
 
-      <details>
-        <summary><strong>Preferovaný stack?</strong></summary>
-        <p>HTML, CSS, JavaScript, React, Next.js, Django.</p>
-      </details>
+            <details>
+              <summary><strong>Kolik stojí web?</strong></summary>
+              <p><em>Cena nevzniká podle ceníku. Odvíjí se od rozsahu, smyslu a nároků na kvalitu. Pokud hledáš nejlevnější variantu, pravděpodobně si nebudeme rozumět.</em></p>
+            </details>
+
+            <details>
+              <summary><strong>Jak dlouho trvá spolupráce?</strong></summary>
+              <p><em>Záleží na hloubce projektu. Kvalitní práce potřebuje čas, klid a prostor pro rozhodování. Spěch je většinou na úkor výsledku.</em></p>
+              <p><em>Po spuštění webu spolupráce nekončí. Nabízím dlouhodobou správu a péči – drobné úpravy textů, obsahu nebo struktury v rámci měsíčního paušálu</em></p>
+            </details>
+
+            <details>
+              <summary><strong>Jak probíhá spolupráce?</strong></summary>
+              <p><em>Jednoduše a strukturovaně. Nejdřív si ujasníme smysl a očekávání. Pokud dává spolupráce smysl oběma stranám, teprve potom vzniká řešení.</em></p>
+            </details>
+
+            <details>
+              <summary><strong>Proč na webu nemáš seznam služeb?</strong></summary>
+              <p><em>Protože nehledám transakce. Hledám spolupráce, které dávají smysl oběma stranám.</em></p>
+            </details>
+
+            <details>
+              <summary><strong>Proč bych si měl vybrat právě tebe?</strong></summary>
+              <p><em>Nemusíš. Pokud váháš, je to v pořádku. Spolupráce funguje jen tehdy, když je rozhodnutí klidné</em></p>
+            </details>
+
+          </div>
+        </div>
     </div>
   </div>
 

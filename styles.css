@@ -111,11 +111,21 @@ body {
   color: var(--muted);
   font-size: 0.95rem;
   cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-center button:hover {
+  color: var(--text);
+  transform: scale(1.08);
 }
 
 .nav-right a {
   color: var(--muted);
   text-decoration: none;
+}
+
+.nav-right a.lang-flag {
+  font-size: 1.1rem;
 }
 
 .hamburger {
@@ -133,6 +143,45 @@ body {
   justify-content: center;
  
 }
+
+/* =========================
+   NAV ICONS (Font Awesome)
+   ========================= */
+
+.nav-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-right a:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
+  color: var(--text);
+}
+
+.nav-right i {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.nav-right a:hover i {
+  color: var(--text);
+}
+
+/* Mobile menu icons */
+.mobile-menu i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
 
 /* =========================
    MOBILE MENU 
@@ -199,9 +248,7 @@ body {
   color: var(--muted);
 }
 
-.mobile-menu .menu-secondary:first-of-type {
-  margin-top: 1.5rem;
-}
+
 
 /* =========================
    HERO
@@ -360,6 +407,70 @@ body {
   max-height: 90vh;
 }
 
+.modal-body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-content h2 {
+  padding: 1.5rem 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.modal-content .projects-grid {
+  padding: 0 2rem 2rem;
+  overflow-y: auto;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  overflow: visible;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  color: var(--hover-accent);
+}
+
+.project-links span {
+  font-size: 0.85rem;
+  color: var(--muted)
+}
+
 /* =========================
    FOOTER
    ========================= */
@@ -376,6 +487,60 @@ body {
   margin-top: 0.5rem;
   font-size: medium;
 }
+
+
+/* =========================
+  FAQ 
+   ========================= */
+
+.modal-content details {
+  border-bottom: 1px solid var(--border);
+  padding: 0.25rem 0;
+}
+
+.modal-content details:last-of-type {
+  border-bottom: none;
+}
+
+.modal-content summary {
+  list-style: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.75rem 0.25rem;
+  min-height: 44px;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.modal-content summary::-webkit-details-marker {
+  display: none;
+}
+
+.modal-content summary::after {
+  content: "'";
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.modal-content details[open] summary::after {
+  transform: rotate(-90deg);
+}
+
+.modal-content details p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.6rem;
+}
+
 
 
 /* =========================
@@ -398,7 +563,8 @@ body {
   }
 
   .hero-content {
-    margin-left: 2rem;
+    margin-left: 0;
+    padding: 0 1.5rem;
   }
 
   .three-columns {
@@ -411,8 +577,18 @@ body {
 
   .modal-content {
     max-height: calc(100vh - 2rem);
+    width: calc(100% - 2rem);
     margin-top: 1rem;
     overscroll-behavior: contain;
+  }
+  
+  .modal-content h2 {
+    padding: 1.25rem 1.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .modal-content .projects-grid {
+    padding: 0 1.5rem 1.5rem;
   }
 
   .modal-body {
