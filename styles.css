@@ -39,6 +39,15 @@ body {
   padding-top: 64px;
 }
 
+h1, h2, h3 {
+  letter-spacing: 0.1rem;
+}
+
+p, span, small, button {
+  letter-spacing: 0.05rem;
+}
+
+
 /* =========================
    LAYOUT HELPERS
    ========================= */
@@ -77,6 +86,8 @@ body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+
+  letter-spacing: 0.05rem;
 }
 
 .nav-left {
@@ -350,8 +361,6 @@ body {
 }
 
 .panel button:hover {
-  text-transform: uppercase;
-  transform: scale(1.05);
   color: var(--hover-accent);
 }
 
@@ -560,6 +569,10 @@ body {
     right: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .mobile-menu button {
+    letter-spacing: 0.06rem;
   }
 
   .hero-content {
