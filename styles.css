@@ -312,10 +312,9 @@ p, span, small, button {
 
 .hero-content a:hover {
   background: var(--hover-accent);
-  text-transform: uppercase;
   color: var(--hover-text);
-  text-shadow: #0b0d10 4px 8px 12px;
-  transform: scale(1.09);
+  text-shadow: 0b0d10 4px 8px 12px;
+  
 }
 
 /* =========================
@@ -480,22 +479,6 @@ p, span, small, button {
   color: var(--muted)
 }
 
-/* =========================
-   FOOTER
-   ========================= */
-
-.site-footer {
-  text-align: center;
-  padding: 2rem 1.5rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.site-footer small {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: medium;
-}
 
 
 /* =========================
@@ -550,6 +533,33 @@ p, span, small, button {
   line-height: 1.6rem;
 }
 
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: medium;
+}
+
+.site-footer a {
+  text-decoration: none;
+  color: var(--muted);
+  letter-spacing: 0.09rem;
+}
+
+.site-footer a:hover {
+  cursor: pointer;
+  color: var(--hover-text);
+}
 
 
 /* =========================
