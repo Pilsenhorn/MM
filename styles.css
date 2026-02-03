@@ -548,6 +548,7 @@ p, span, small, button {
   display: block;
   margin-top: 0.5rem;
   font-size: medium;
+  font-size: small;
 }
 
 .site-footer a {
