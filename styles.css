@@ -107,14 +107,16 @@ p, span, small, button {
 
 /* ========================
   LOGO 
-  doplnit stylování pro logo
-  logo je odkaz na domovskou stránku
-  logo by mělo být výrazné a dobře viditelné
-  logo by mělo mít dostatečný kontrast s pozadím
-  logo by mělo být umístěno vlevo v hlavičce
-  logo by mělo mít dostatečnou velikost pro snadnou identifikaci
-
   =========================  */
+
+.nav-left-logo {
+    display: block;
+    align-items: center;
+    height: 32px;
+    width: auto;
+    filter: brightness(1) invert(2);
+
+}
 
 .nav-center button {
   background: none;
@@ -266,29 +268,41 @@ p, span, small, button {
    ========================= */
 
 .hero {
+  position: relative;
   min-height: 100vh;
-  padding-top: 20vh;
+  width: 100%;
+  
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)
+  ),
+    url(assets/profilovkajpeg.jpeg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
  
 
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: flex-end;
+
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--bg)
+  z-index: 0;
+  display: none;
 }
 
 .hero-content {
   position: relative;
   max-width: 600px;
+  margin-top: 40vh;
+  padding-top: 45vh;
   margin: 0;
   text-align: center;
-  
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
