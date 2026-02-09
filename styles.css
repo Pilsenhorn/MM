@@ -31,16 +31,24 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, -aple system, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   padding-top: 64px;
 }
 
-h1, h2, h3 {
+h1{
   letter-spacing: 0.1rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 500;
+}
+
+h2, h3 {
+  letter-spacing: 0.05rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 400;
+
 }
 
 p, span, small, button {
