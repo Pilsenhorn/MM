@@ -1,3 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-  <path fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z" clip-rule="evenodd" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none">
+
+  <!-- Kruh -->
+  <circle cx="32" cy="32" r="26"
+          stroke="black"
+          stroke-width="5"/>
+
+  <!-- Hlavní osa -->
+  <line x1="32" y1="14" x2="32" y2="50"
+        stroke="black"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Horní runová ramena -->
+  <line x1="32" y1="20" x2="20" y2="30"
+        stroke="black"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <line x1="32" y1="20" x2="44" y2="30"
+        stroke="black"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <!-- Spodní runová ramena -->
+  <line x1="32" y1="44" x2="20" y2="34"
+        stroke="black"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
+  <line x1="32" y1="44" x2="44" y2="34"
+        stroke="black"
+        stroke-width="6"
+        stroke-linecap="round"/>
+
 </svg>
