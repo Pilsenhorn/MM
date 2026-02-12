@@ -2,37 +2,29 @@
      viewBox="0 0 64 64"
      fill="none">
 
-  <!-- Kruh -->
-  <circle cx="32" cy="32" r="26"
+  <!-- Ochranný kruh -->
+  <circle cx="32" cy="32" r="20"
           stroke="black"
           stroke-width="5"/>
 
-  <!-- Hlavní osa -->
-  <line x1="32" y1="14" x2="32" y2="50"
-        stroke="black"
-        stroke-width="6"
-        stroke-linecap="round"/>
+  <!-- Plamen (geometrický, silný) -->
+  <path d="M32 18
+           C28 26, 36 28, 32 36
+           C28 42, 34 46, 32 50
+           C40 44, 42 36, 36 28
+           C34 24, 34 22, 32 18 Z"
+        fill="black"/>
 
-  <!-- Horní runová ramena -->
-  <line x1="32" y1="20" x2="20" y2="30"
-        stroke="black"
-        stroke-width="6"
-        stroke-linecap="round"/>
-
-  <line x1="32" y1="20" x2="44" y2="30"
-        stroke="black"
-        stroke-width="6"
-        stroke-linecap="round"/>
-
-  <!-- Spodní runová ramena -->
-  <line x1="32" y1="44" x2="20" y2="34"
-        stroke="black"
-        stroke-width="6"
-        stroke-linecap="round"/>
-
-  <line x1="32" y1="44" x2="44" y2="34"
-        stroke="black"
-        stroke-width="6"
-        stroke-linecap="round"/>
+  <!-- 8 paprsků -->
+  <g stroke="black" stroke-width="4" stroke-linecap="round">
+    <line x1="32" y1="4"  x2="32" y2="10"/>
+    <line x1="48" y1="10" x2="44" y2="14"/>
+    <line x1="60" y1="32" x2="54" y2="32"/>
+    <line x1="48" y1="54" x2="44" y2="50"/>
+    <line x1="32" y1="60" x2="32" y2="54"/>
+    <line x1="16" y1="54" x2="20" y2="50"/>
+    <line x1="4"  y1="32" x2="10" y2="32"/>
+    <line x1="16" y1="10" x2="20" y2="14"/>
+  </g>
 
 </svg>
