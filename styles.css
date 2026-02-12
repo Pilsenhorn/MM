@@ -279,19 +279,7 @@ p, span, small, button {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  
-
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)
-  ),
-    url(assets/profilovkajpeg.jpeg);
-    filter: grayscale();
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center 40%;
  
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -299,8 +287,28 @@ p, span, small, button {
 }
 
 .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url(assets/profilovkajpeg.jpeg) center 40% / cover no-repeat;
+  
+  filter: grayscale(85%) contrast(110%);
+ 
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+
   z-index: 0;
-  display: none;
 }
 
 .hero-content {
@@ -315,6 +323,7 @@ p, span, small, button {
 }
 
 .hero-content h1 {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
   font-size: clamp(2.5rem, 5vw, 4rem);
   text-transform: uppercase;
 }
