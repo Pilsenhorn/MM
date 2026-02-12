@@ -328,6 +328,11 @@ p, span, small, button {
   text-transform: uppercase;
 }
 
+.hero-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .hero-content a {
   display: inline-flex;
   justify-content: center;
@@ -346,8 +351,8 @@ p, span, small, button {
   background: var(--hover-accent);
   color: var(--hover-text);
   text-shadow: 0b0d10 4px 8px 12px;
-  
 }
+
 
 /* =========================
    THREE COLUMNS - MODALS
