@@ -312,8 +312,7 @@ p, span, small, button {
 .hero-content {
   position: relative;
   max-width: 600px;
-  margin-top: 40vh;
-  padding-top: 46vh;
+  padding-top: 30vh;
   margin: 0;
   text-align: center;
   position: relative;
@@ -623,7 +622,7 @@ p, span, small, button {
 
   .hero-content {
     margin-left: 0;
-    margin-top: 46vh;
+    margin-top: 30vh;
     padding: 0 1.5rem;
   }
 
