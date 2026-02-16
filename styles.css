@@ -282,8 +282,6 @@ p, span, small, button {
  
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-
 }
 
 .hero::before {
@@ -315,7 +313,7 @@ p, span, small, button {
   position: relative;
   max-width: 600px;
   margin-top: 40vh;
-  padding-top: 45vh;
+  padding-top: 46vh;
   margin: 0;
   text-align: center;
   position: relative;
@@ -341,15 +339,14 @@ p, span, small, button {
   margin-top: 2rem;
   padding: 0.75rem 1.5rem;
 
-  background: var(--accent);
+  background: var(--hover-accent);
   color: var(--text);
   text-decoration: none;
   border-radius: 999px;
 }
 
 .hero-content a:hover {
-  background: var(--hover-accent);
-  color: var(--hover-text);
+  background: var(--accent);
   text-shadow: 0b0d10 4px 8px 12px;
 }
 
@@ -386,18 +383,19 @@ p, span, small, button {
 
 .panel p {
   color: var(--muted);
+  text-align: center;
 }
 
 .panel button {
   margin-top: 1.5rem;
   background: none;
   border: none;
-  color: var(--accent);
+  color: var(--muted);
   cursor: pointer;
 }
 
 .panel button:hover {
-  color: var(--hover-accent);
+  color: var(--hover-text);
 }
 
 /* =========================
@@ -625,6 +623,7 @@ p, span, small, button {
 
   .hero-content {
     margin-left: 0;
+    margin-top: 46vh;
     padding: 0 1.5rem;
   }
 
