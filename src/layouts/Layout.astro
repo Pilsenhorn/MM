@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Michal Mikulenka Systems development</title>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+	</head>
+	<body class="bg-background text-text-primary font-sans">
+		<slot />
+		<!-- SCRIPT -->
+		<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const btn = document.getElementById('menu-btn');
+			const menu = document.getElementById('mobile-menu');
+
+			if (!btn || !menu) return;
+
+			// toggle menu
+			btn.addEventListener('click', () => {
+			menu.classList.toggle('hidden');
+			});
+
+			// auto close
+			const links = menu.querySelectorAll('a');
+			links.forEach(link => {
+			link.addEventListener('click', () => {
+				menu.classList.add('hidden');
+			});
+			});
+		});
+		</script>
+	</body>
+</html>
+

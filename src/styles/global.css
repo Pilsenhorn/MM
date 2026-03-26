@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* DESIGN SYSTEM - COLORS */
+
+:root {
+  --background: #02122f;
+  --text-primary: #f0ecdd;
+  --muted: #8ba3c5;
+  --accent: #495b7d;
+  --accent-hover: #23354d;
+}
+/* BASE STYLES */
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
