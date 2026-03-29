@@ -3,17 +3,54 @@
 /* DESIGN SYSTEM - COLORS */
 
 :root {
-  --background: #02122f;
-  --text-primary: #f0ecdd;
-  --muted: #8ba3c5;
-  --accent: #495b7d;
-  --accent-hover: #23354d;
+  --background: #cee0f4;
+  --text-primary: #050b1e;
+  --muted: #859fc0;
+  --accent: #315381;
+  --accent-hover: #495b7d;
+  --text-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.2);
+  --text-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --text-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 /* BASE STYLES */
 
 body {
     background-color: var(--background);
     color: var(--text-primary);
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Satoshi', sans-serif, system-ui;
+}
+.text-shadow-sm {
+    text-shadow: var(--text-shadow-sm);
+}
+.text-shadow-md {
+    text-shadow: var(--text-shadow-md);
+}
+.text-shadow-lg {
+    text-shadow: var(--text-shadow-lg);
 }
 
+/* SATOSHI FONT */
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

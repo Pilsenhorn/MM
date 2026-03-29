@@ -1,33 +1,30 @@
-<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-(--muted)">
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-(--background)/5">
 
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="w-full mx-auto px-6 py-4 flex items-center justify-between border border-(--text-primary)/20 rounded-4xl">
 
     <!-- LOGO -->
     <a href="/" class="flex items-center">
-      <img src="/logo.png" alt="Mikulenka" class="h-10 w-10"/>
+      <img src="/logo.png" alt="Home" class="h-10 w-10"/>
     </a>
 
     <!-- DESKTOP NAV -->
     <nav class="hidden md:flex items-center gap-8 text-base md:text-lg">
-
-      <a href="#problem" class="hover:text-white transition">Problém</a>
-      <a href="#solution" class="hover:text-white transition">Řešení</a>
-      <a href="#case" class="hover:text-white transition">Výsledky</a>
-
       <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
          class="bg-(--accent) hover:bg-(--accent-hover)
-                px-5 py-2 rounded-lg font-semibold transition">
+                px-5 py-2 rounded-lg font-medium transition tracking-wide text-(--background)">
         Zjistit, kde ztrácím klienty
       </a>
-
+      <a href="#problem" class="hover:text-(--accent) transition">Problém</a>
+      <a href="#solution" class="hover:text-(--accent) transition">Řešení</a>
+      <a href="#case" class="hover:text-(--accent) transition">Jak pracuji</a>
     </nav>
 
     <!-- MOBILE BUTTON -->
     <button id="menu-btn" class="md:hidden flex flex-col gap-1">
 
-      <span class="w-6 h-0.5 bg-white"></span>
-      <span class="w-6 h-0.5 bg-white"></span>
-      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
+      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
+      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
 
     </button>
 
@@ -35,17 +32,14 @@
 
   <!-- MOBILE MENU -->
   <div id="mobile-menu"
-       class="md:hidden px-6 pb-6 flex flex-col gap-4 py-6 bg-(--background) border-t border-(--muted)">
-
-    <a href="#problem" class="py-2 border-b border-(--muted) text-center text-lg">Problém</a>
-    <a href="#solution" class="py-2 border-b border-(--muted) text-center text-lg">Řešení</a>
-    <a href="#case" class="py-2 border-b border-(--muted) text-center text-lg">Výsledky</a>
-
+       class="md:hidden max-w-xs px-4 pb-4 flex flex-col gap-4 py-6 bg-(--background) border rounded-lg border-(--text-primary)/50 mx-8 ml-auto">
     <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
-       class="bg-(--accent) px-4 py-3 rounded-lg text-center font-semibold">
+       class="bg-(--accent) px-4 py-3 rounded-lg text-center font-semibold tracking-wide hover:bg-(--accent-hover) transition">
       Zjistit, kde ztrácím klienty
     </a>
-
+    <a href="#problem" class="py-2 text-center text-lg">Problém</a>
+    <a href="#solution" class="py-2 text-center text-lg">Řešení</a>
+    <a href="#case" class="py-2 text-center text-lg">Jak pracuji</a>
   </div>
 
 </header>

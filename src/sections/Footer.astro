@@ -1,50 +1,79 @@
-<footer class="py-16 px-6 border-t border-(--muted)">
+<footer class="py-16 px-6 border-t border-(--accent)/60 bg-(--muted)/50">
 
-  <div class="max-w-6xl mx-auto space-y-10">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 items-start">
 
-    <!-- CTA BLOCK -->
-    <div class="text-center space-y-4">
+    <!-- LEFT: BRAND (subtle) -->
+    <div class="flex flex-col items-start text-left space-y-1 opacity-60 self-end">
 
-      <h3 class="text-xl md:text-2xl font-semibold">
-        Váš web může přivádět klienty. Jen teď nepřivádí.
-      </h3>
+      <div class="font-medium text-sm">
+        Michal Mikulenka
+      </div>
 
-      <p class="text-(--muted)">
-        Ukážu vám proč — a co s tím.
+      <p class="text-sm">
+        Weby, které vedou k rozhodnutí.
       </p>
 
+    </div>
+    
+    
+    
+    <!-- CENTER -->
+    <div class="space-y-5 text-left max-w-md">
+
+      <h3 class="text-lg md:text-xl font-bold leading-snug tracking-wide">
+        Většina webů neprodává.<br>
+        Ne proto, že jsou pomalé.<br>
+        Ale protože nevedou k rozhodnutí.
+      </h3>
+
+      <p class="text-sm md:text-base opacity-80 leading-relaxed">
+        Během 30 minut uvidíte přesně,
+        kde přicházíte o klienty a co změnit.
+      </p>
+
+      <div class="space-y-2">
+        <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
+           class="inline-block bg-(--accent) text-(--background)
+                  px-6 py-3 rounded-xl font-medium tracking-normal
+                  hover:bg-(--accent-hover) transition">
+          Rezervovat diagnostiku
+        </a>
+
+        <p class="text-xs opacity-60">
+          30 minut • konkrétní výstup • bez závazků
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT: LINKS -->
+    <div class="flex flex-col items-start md:items-end gap-3 text-sm self-end">
+
+      <a href="https://www.linkedin.com" target="_blank"
+         class="hover:text-(--accent) transition ">
+        LinkedIn
+      </a>
+
       <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
-         class="inline-block bg-(--accent)
-                hover:bg-(--accent-hover)
-                px-6 py-3 rounded-xl font-semibold transition">
-        Zjistit, kde ztrácím klienty
+         class="hover:text-(--accent) transition ">
+        Rezervace
       </a>
 
     </div>
 
-    <!-- BOTTOM -->
-    <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-(--muted)">
+  </div>
 
-      <!-- LEFT -->
-      <div>
-        © {new Date().getFullYear()} Michal Mikulenka
-      </div>
+  
+  <!-- BOTTOM LINE -->
+  <div class="max-w-7xl mx-auto w-full mt-10 pt-6 border-t border-(--text-primary)/20 text-sm opacity-50 flex justify-between items-center flex-col md:flex-row gap-4">
 
-      <!-- RIGHT -->
-      <div class="flex gap-6">
+    <div class="text-center md:text-left">
+    © {new Date().getFullYear()} Michal Mikulenka
+    </div>
 
-        <a href="https://www.linkedin.com" target="_blank"
-           class="hover:text-white transition">
-          LinkedIn
-        </a>
-
-        <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
-           class="hover:text-white transition">
-          Rezervace
-        </a>
-
-      </div>
-
+    <div class="text-center md:text-right">
+    Méně chaosu. Více rozhodnutí.
     </div>
 
   </div>
