@@ -1,45 +1,52 @@
-<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-(--background)/5">
-
-  <div class="w-full mx-auto px-6 py-4 flex items-center justify-between border border-(--text-primary)/20 rounded-4xl">
-
-    <!-- LOGO -->
-    <a href="/" class="flex items-center">
-      <img src="/logo.png" alt="Home" class="h-10 w-10"/>
-    </a>
-
-    <!-- DESKTOP NAV -->
-    <nav class="hidden md:flex items-center gap-8 text-base md:text-lg">
-      <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
-         class="bg-(--accent) hover:bg-(--accent-hover)
-                px-5 py-2 rounded-lg font-medium transition tracking-wide text-(--background)">
-        Zjistit, kde ztrácím klienty
+﻿<header class="fixed top-0 left-0 z-50 w-full px-3 pt-3 sm:px-4">
+  <div class="mx-auto w-full">
+    <div class="flex w-full items-center justify-between rounded-3xl border border-(--text-primary)/15 bg-(--background)/80 px-3 py-3 backdrop-blur-md sm:px-5">
+      <a href="/" class="flex shrink-0 items-center">
+        <img src="/logo.png" alt="Home" class="h-9 w-9 sm:h-10 sm:w-10" />
       </a>
-      <a href="#problem" class="hover:text-(--accent) transition">Problém</a>
-      <a href="#solution" class="hover:text-(--accent) transition">Řešení</a>
-      <a href="#case" class="hover:text-(--accent) transition">Jak pracuji</a>
-    </nav>
 
-    <!-- MOBILE BUTTON -->
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1">
+      <nav class="hidden items-center gap-5 text-sm font-medium lg:flex xl:gap-8 xl:text-base">
+        <a
+          href="https://calendly.com/pilsenhorn/audit-systemu-30-min"
+          target="_blank"
+          class="tracking-cta rounded-full bg-(--accent) px-5 py-2.5 text-(--background) transition hover:bg-(--accent-hover)"
+        >
+          Zjistit, kde ztrácím klienty
+        </a>
+        <a href="#problem" class="transition hover:text-(--accent)">Problém</a>
+        <a href="#solution" class="transition hover:text-(--accent)">Řešení</a>
+        <a href="#case" class="transition hover:text-(--accent)">Jak pracuji</a>
+        <a href="#offer" class="transition hover:text-(--accent)">Nabídka</a>
+      </nav>
 
-      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
-      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
-      <span class="w-6 h-0.5 bg-(--text-primary)"></span>
-
-    </button>
-
+      <button
+        id="menu-btn"
+        class="flex shrink-0 flex-col gap-1 rounded-xl p-2 lg:hidden"
+        aria-label="Otevřít navigaci"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <span class="h-0.5 w-6 bg-(--text-primary)"></span>
+        <span class="h-0.5 w-6 bg-(--text-primary)"></span>
+        <span class="h-0.5 w-6 bg-(--text-primary)"></span>
+      </button>
+    </div>
   </div>
 
-  <!-- MOBILE MENU -->
-  <div id="mobile-menu"
-       class="md:hidden max-w-xs px-4 pb-4 flex flex-col gap-4 py-6 bg-(--background) border rounded-lg border-(--text-primary)/50 mx-8 ml-auto">
-    <a href="https://calendly.com/pilsenhorn/audit-systemu-30-min" target="_blank"
-       class="bg-(--accent) px-4 py-3 rounded-lg text-center font-semibold tracking-wide hover:bg-(--accent-hover) transition">
+  <div
+    id="mobile-menu"
+    class="fixed left-3 right-3 top-20 hidden flex-col gap-2 overflow-y-auto rounded-3xl border border-(--text-primary)/15 bg-(--background)/95 p-3 shadow-xl backdrop-blur-md sm:left-4 sm:right-4 lg:hidden"
+  >
+    <a
+      href="https://calendly.com/pilsenhorn/audit-systemu-30-min"
+      target="_blank"
+      class="tracking-cta rounded-2xl bg-(--accent) px-4 py-3 text-center leading-snug text-(--background) transition hover:bg-(--accent-hover)"
+    >
       Zjistit, kde ztrácím klienty
     </a>
-    <a href="#problem" class="py-2 text-center text-lg">Problém</a>
-    <a href="#solution" class="py-2 text-center text-lg">Řešení</a>
-    <a href="#case" class="py-2 text-center text-lg">Jak pracuji</a>
+    <a href="#problem" class="rounded-2xl px-4 py-3 text-center text-base transition hover:bg-white/40">Problém</a>
+    <a href="#solution" class="rounded-2xl px-4 py-3 text-center text-base transition hover:bg-white/40">Řešení</a>
+    <a href="#case" class="rounded-2xl px-4 py-3 text-center text-base transition hover:bg-white/40">Jak pracuji</a>
+    <a href="#offer" class="rounded-2xl px-4 py-3 text-center text-base transition hover:bg-white/40">Nabídka</a>
   </div>
-
 </header>
