@@ -2,16 +2,23 @@
 import "../styles/global.css";
 
 const siteUrl = "https://mikulenka.dev";
-const pageTitle = "Michal Mikulenka - systémy pro weby a AI, které přivádějí klienty";
+const pageTitle = "Webové a CRM systémy pro získávání klientů | Michal Mikulenka";
 const pageDescription =
-	"Navrhuji a stavím jednoduché webové a AI systémy, které automatizují obchod a přivádějí klienty. Diagnostika od 2 500 Kč.";
+	"Navrhuji systémy, které přivádějí klienty, udržují pořádek v poptávkách a vedou k rozhodnutí. Diagnostika systému od 2 500 Kč.";
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
 	name: "Michal Mikulenka",
 	url: siteUrl,
-	jobTitle: "Webový a AI konzultant",
+	jobTitle: "Konzultant pro systémy získávání klientů",
 	description: pageDescription,
+	knowsAbout: [
+		"webové systémy",
+		"CRM systémy",
+		"získávání klientů",
+		"konverzní optimalizace",
+		"automatické podnikání",
+	],
 	sameAs: ["https://www.linkedin.com/in/michal-mikulenka-4b8939330"],
 };
 ---
@@ -36,33 +43,97 @@ const jsonLd = {
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={pageDescription} />
 		<meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Michal Mikulenka" />
+		<meta name="theme-color" content="#000000" />
 		<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	</head>
 	<body class="bg-background text-text-primary font-sans">
 		<slot />
 		<script>
-			document.addEventListener("DOMContentLoaded", () => {
-				const btn = document.getElementById("menu-btn");
-				const menu = document.getElementById("mobile-menu");
+		document.addEventListener("DOMContentLoaded", () => {
+			const btn = document.getElementById("menu-btn") as HTMLButtonElement | null;
+			const menu = document.getElementById("mobile-menu") as HTMLElement | null;
 
-				if (!btn || !menu) return;
+			if (!btn || !menu) return;
 
-				btn.addEventListener("click", () => {
-					const isOpening = menu.classList.contains("hidden");
-					menu.classList.toggle("hidden", !isOpening);
-					menu.classList.toggle("flex", isOpening);
-					btn.setAttribute("aria-expanded", String(isOpening));
-				});
+			let lastFocusedElement: HTMLElement | null = null;
 
-				const links = menu.querySelectorAll("a");
-				links.forEach((link) => {
-					link.addEventListener("click", () => {
-						menu.classList.add("hidden");
-						menu.classList.remove("flex");
-						btn.setAttribute("aria-expanded", "false");
-					});
-				});
+			const focusableSelectors =
+			'a, button, textarea, input, select, [tabindex]:not([tabindex="-1"])';
+
+			const getFocusable = () =>
+			menu.querySelectorAll<HTMLElement>(focusableSelectors);
+
+			const openMenu = () => {
+			lastFocusedElement = document.activeElement as HTMLElement;
+
+			menu.classList.remove("hidden");
+			menu.classList.add("flex");
+			menu.setAttribute("aria-hidden", "false");
+			btn.setAttribute("aria-expanded", "true");
+
+			const focusable = getFocusable();
+			if (focusable.length) focusable[0].focus();
+			};
+
+			const closeMenu = () => {
+			menu.classList.add("hidden");
+			menu.classList.remove("flex");
+			menu.setAttribute("aria-hidden", "true");
+			btn.setAttribute("aria-expanded", "false");
+
+			lastFocusedElement?.focus();
+			};
+
+			btn.addEventListener("click", () => {
+			const isOpen = btn.getAttribute("aria-expanded") === "true";
+			isOpen ? closeMenu() : openMenu();
 			});
+
+			// close on link click
+			getFocusable().forEach((el) => {
+			el.addEventListener("click", closeMenu);
+			});
+
+			// click outside
+			document.addEventListener("click", (e) => {
+			const target = e.target as Node;
+
+			const isInside = menu.contains(target);
+			const isBtn = btn.contains(target);
+
+			if (!isInside && !isBtn && btn.getAttribute("aria-expanded") === "true") {
+				closeMenu();
+			}
+			});
+
+			// ESC + focus trap
+			document.addEventListener("keydown", (e) => {
+			const isOpen = btn.getAttribute("aria-expanded") === "true";
+			if (!isOpen) return;
+
+			if (e.key === "Escape") {
+				closeMenu();
+			}
+
+			if (e.key === "Tab") {
+				const focusable = getFocusable();
+				if (!focusable.length) return;
+
+				const first = focusable[0];
+				const last = focusable[focusable.length - 1];
+
+				if (e.shiftKey && document.activeElement === first) {
+				e.preventDefault();
+				last.focus();
+				} else if (!e.shiftKey && document.activeElement === last) {
+				e.preventDefault();
+				first.focus();
+				}
+			}
+			});
+		});
 		</script>
 	</body>
 </html>
