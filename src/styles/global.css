@@ -8,9 +8,9 @@
   --muted: #859fc0;
   --accent: #315381;
   --accent-hover: #495b7d;
-  --tracking-heading: 0.015em;
-  --tracking-text: 0.045em;
-  --tracking-cta: 0.08em;
+  --tracking-heading: -0.025em;
+  --tracking-text: 0.005em;
+  --tracking-cta: 0.015em;
   --text-shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.2);
   --text-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
   --text-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.6);
@@ -21,6 +21,17 @@ body {
     background-color: var(--background);
     color: var(--text-primary);
     font-family: 'Satoshi', sans-serif, system-ui;
+}
+.text-body {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+.text-body-lg {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+.text-muted {
+    color: var(--muted);
 }
 .tracking-heading {
     letter-spacing: var(--tracking-heading);
