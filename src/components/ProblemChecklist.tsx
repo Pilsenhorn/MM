@@ -12,7 +12,7 @@ const problems = [
   {
     title: "Máte web, ale moc nepomáhá",
     description:
-      "Existuje, ale klienty příliš nevede k akci.",
+      "Existuje, ale klienty nevede k akci.",
   },
   {
     title: "Lidé se ptají pořád na stejné věci",
@@ -32,7 +32,7 @@ const problems = [
   {
     title: "Máte pocit, že něco nefunguje",
     description:
-      "Jen není jasné co přesně opravit jako první.",
+      "Jen není jasné, co přesně opravit jako první.",
   },
 ];
 

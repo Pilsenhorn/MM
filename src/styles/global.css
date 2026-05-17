@@ -43,6 +43,12 @@ body {
 .tracking-cta {
     letter-spacing: var(--tracking-cta);
 }
+.tracking-serif {
+    letter-spacing: 0.075rem;
+}
+.tracking-serif-heading {
+    letter-spacing: 0.1rem;
+}
 .text-shadow-sm {
     text-shadow: var(--text-shadow-sm);
 }
