@@ -4,10 +4,6 @@
     {/* LEFT SIDE */}
     <div class="space-y-8 md:space-y-10">
 
-      <div class="inline-flex w-fit rounded-full border border-(--muted) bg-(--background-secondary) px-4 py-1.5 text-sm text-(--text-secondary)">
-        Pro malé firmy a služby
-      </div>
-
       <h1 class="tracking-heading text-shadow-xs max-w-4xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
         Přicházíte o klienty dřív, než vám vůbec napíšou.
       </h1>
@@ -17,24 +13,24 @@
       </p>
 
       <p class="tracking-text text-shadow-xs max-w-2xl text-lg leading-relaxed sm:text-xl">
-        Zjistím, kde vám utíkají poptávky a co změnit, aby web začal pomáhat podnikání — ne jen existovat.
+        Zjistím, proč vám klienti nepíšou — a co změnit jako první.
       </p>
 
       {/* BENEFITS */}
       <div class="grid max-w-xl gap-3 pt-4 sm:grid-cols-2">
-        <div class="rounded-xl border border-(--muted) px-4 py-3">
+        <div class="rounded-xl border border-(--muted) bg-(--muted)/50 px-4 py-3">
           Více kvalitních poptávek
         </div>
 
-        <div class="rounded-xl border border-(--muted) px-4 py-3">
+        <div class="rounded-xl border border-(--muted) bg-(--muted)/50 px-4 py-3">
           Méně chaosu v komunikaci
         </div>
 
-        <div class="rounded-xl border border-(--muted) px-4 py-3">
+        <div class="rounded-xl border border-(--muted) bg-(--muted)/50 px-4 py-3">
           Rychlejší rozhodování klientů
         </div>
 
-        <div class="rounded-xl border border-(--muted) px-4 py-3">
+        <div class="rounded-xl border border-(--muted) bg-(--muted)/50 px-4 py-3">
           Méně vysvětlování dokola
         </div>
       </div>
@@ -59,53 +55,67 @@
 
       {/* TRUST TEXT */}
       <p class="max-w-xl text-sm text-(--text-secondary)">
-        Bez zbytečných nástrojů. Bez chaosu. Prakticky a podle reality vašeho podnikání.
+        Bez chaosu. Prakticky a podle vašeho podnikání.
       </p>
     </div>
 
     {/* RIGHT SIDE */}
-    <div class="relative order-first md:order-0">
+    <div class="relative order-first hidden md:flex md:order-0 md:justify-center">
 
-      <div class="absolute inset-0 bg-(--accent)/20 blur-3xl"></div>
+      <div class="flex w-full max-w-115 flex-col gap-6">
 
-      <div class="mx-auto flex max-w-sm flex-col items-center gap-3 text-center">
+        {/* Workflow card */}
+        <div class="rounded-4xl border border-(--muted) bg-(--background)/30 p-10 shadow-sm">
 
-        <div class="rounded-xl border border-(--muted) px-4 py-2">
-          Návštěvník
+          <div class="flex flex-col items-center gap-4 text-center p-4">
+
+            <div class="rounded-xl border border-(--muted) bg-(--background)/50 px-4 py-2 backdrop-blur-sm">
+              Návštěvník
+            </div>
+
+            <div class="text-(--muted)">↓</div>
+
+            <div class="rounded-xl border border-(--muted) bg-(--background)/50 px-4 py-2 backdrop-blur-sm">
+              Web ( první dojem )
+            </div>
+
+            <div class="text-(--muted)">↓</div>
+
+            <div class="rounded-xl border border-(--muted) bg-(--background)/50 px-4 py-2 backdrop-blur-sm">
+              Zájem / důvěra
+            </div>
+
+            <div class="text-(--muted)">↓</div>
+
+            <div class="rounded-xl border border-(--muted) bg-(--background)/50 px-4 py-2 backdrop-blur-sm">
+              Získá poptávku
+            </div>
+
+            <div class="text-(--muted)">↓</div>
+
+            <div class="rounded-xl border border-(--accent) bg-(--accent)/10 px-4 py-2">
+              Audit → systém → rozhodnutí
+            </div>
+
+            <div class="text-(--muted)">↓</div>
+
+            <div class="rounded-xl border border-(--muted) bg-(--background)/50 px-4 py-2 backdrop-blur-sm">
+              Důvěra / spolupráce
+            </div>
+
+            {/* Positioning text */}
+
+            <p class="tracking-wider mt-3 text-xl font-semibold text-(--text-primary)/85 font-serif">
+              Klienti neodpadávají náhodou.
+            </p>
+            <div class="my-3 h-px w-20 bg-(--muted)"></div>
+            <p class="max-w-xs text-sm leading-relaxed text-(--text-secondary)">
+              Jen někde ztrácíte důvěru.
+              Zjistím kde — <br>
+              a co změnit jako první.
+            </p>    
+          </div>
         </div>
-
-        <div class="text-(--muted)">↓</div>
-
-        <div class="rounded-xl border border-red-400/40 bg-red-400/5 px-4 py-2">
-          Web bez strategie
-        </div>
-
-        <div class="text-(--muted)">↓</div>
-
-        <div class="rounded-xl border border-red-400/40 px-4 py-2">
-          Zmatek / žádná důvěra
-        </div>
-
-        <div class="text-(--muted)">↓</div>
-
-        <div class="rounded-xl border border-red-400/40 px-4 py-2">
-          Žádná poptávka
-        </div>
-
-        <div class="my-2 text-sm uppercase tracking-[0.2em] text-(--text-secondary)">
-          místo toho
-        </div>
-
-        <div class="rounded-xl border border-(--accent) bg-(--accent)/10 px-4 py-2">
-          Audit → systém rozhodování
-        </div>
-
-        <div class="text-(--muted)">↓</div>
-
-        <div class="rounded-xl border border-(--muted) px-4 py-2">
-          Poptávka / schůzka / klient
-        </div>
-
       </div>
     </div>
   </div>

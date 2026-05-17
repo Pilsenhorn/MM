@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@fontsource/instrument-serif";
 
 /* DESIGN SYSTEM - COLORS */
 
@@ -76,4 +77,9 @@ body {
     font-weight: 700;
     font-style: normal;
     font-display: swap;
+}
+
+/* Serif FONT */
+.font-serif {
+    font-family: 'Instrument Serif', serif;
 }
