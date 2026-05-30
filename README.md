@@ -1,29 +1,33 @@
-# 🚀 Mikulenka.dev – Konverzní web
+# 🚀 Mikulenka.dev – Weby bez šablon
 
-Web zaměřený na jediný cíl:
-👉 přivádět klienty skrze jednoduchý a funkční systém
+Moderní firemní web zaměřený na jediný cíl:
+
+👉 vytvořit důvěru, odlišit značku a přivádět klienty
 
 ---
 
 ## ✨ Co řeší
 
-Většina webů:
+Mnoho firemních webů:
 
-* má návštěvnost, ale nepřináší poptávky
-* je složitá a roztříštěná
-* nevede uživatele k akci
+* působí genericky
+* vypadají jako další šablona
+* nevysvětlují hodnotu služby
+* nevedou návštěvníka k rozhodnutí
 
-Tenhle projekt ukazuje opačný přístup:
-👉 minimalismus + jasná struktura + konverze
+Tento projekt ukazuje jiný přístup:
+
+👉 promyšlený vizuál + jasná struktura + důvěryhodný první dojem
 
 ---
 
 ## 🧠 Přístup
 
-* 1 jasný cíl → získat klienta
-* žádný vizuální chaos
-* každá sekce vede k akci
-* žádné zbytečné technologie
+* web není jen design
+* každá sekce má důvod existovat
+* důraz na důvěru a jasnost
+* méně chaosu, více rozhodnutí
+* vizuál odpovídá značce, ne trendům
 
 ---
 
@@ -31,7 +35,8 @@ Tenhle projekt ukazuje opačný přístup:
 
 * Astro
 * Tailwind CSS
-* Deploy: (doplň – Vercel / Netlify / Railway)
+* React Islands
+* Deploy: (doplň — Vercel / Netlify)
 
 ---
 
@@ -61,12 +66,14 @@ npm run preview
 
 ## 🎯 Poznámka
 
-Tento projekt není o designu.
-Je o tom, aby web **vydělával**.
+Tento projekt není o efektech pro efekt.
+
+Je o tom, aby web působil důvěryhodně, odpovídal značce a pomáhal podnikání růst.
 
 ---
 
 ## 📬 Kontakt
 
-Chceš podobný systém?
-👉 <https://calendly.com/pilsenhorn/audit-systemu-30-min>
+Chceš nový web nebo redesign?
+
+👉 <https://calendly.com/mikulenka-info/45min>
