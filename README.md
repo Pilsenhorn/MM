@@ -36,13 +36,13 @@ Tento projekt ukazuje jiný přístup:
 * Astro
 * Tailwind CSS
 * React Islands
-* Deploy: (doplň — Vercel / Netlify)
+* Deploy: GitHub pages + custom domain
 
 ---
 
 ## 📸 Screenshot
 
-![Homepage](./public/screenshot.png)
+![Homepage](./public/screenshot.webp)
 
 ---
 
