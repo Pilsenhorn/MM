@@ -3,7 +3,8 @@ export const portfolio = [
   slug: "livik",
   title: "Livik",
   category: "Wellbeing & home philosophy",
-  image: "/portfolio/livik.webp",
+  moodboard: "/portfolio/livik-moodboard.webp",
+  mockup: "/portfolio/livik-mockup.webp",
   description:
     "Premium značka zaměřená na klidný domov, nervový systém a dlouhodobou kvalitu života.",
   goal:
@@ -15,7 +16,8 @@ export const portfolio = [
   slug: "lueur-atelier",
   title: "Lueur Atelier",
   category: "Luxury wedding & event atelier",
-  image: "/portfolio/lueur.webp",
+  moodboard: "/portfolio/lueur-moodboard.webp",
+  mockup: "/portfolio/lueur-mockup.webp",
   description:
     "Boutique svatební atelier zaměřený na atmosféru, emoce a nadčasovou filmovou eleganci.",
   goal:
@@ -26,7 +28,8 @@ export const portfolio = [
   slug: "petruv-pes",
   title: "Petrův pes",
   category: "Brand & breeding station website",
-  image: "/portfolio/petruv-pes.webp",
+  moodboard: "/portfolio/petruv-pes-moodboard.webp",
+  mockup: "/portfolio/petruv-pes-mockup.webp",
   description:
     "Moderní a důvěryhodný digitální směr pro rodinnou chovatelskou stanici belgických grifonků.",
   goal:
@@ -37,7 +40,8 @@ export const portfolio = [
   slug: "systemicke-konstelace",
   title: "Systemické konstelace",
   category: "Facilitation & wellbeing guidance",
-  image: "/portfolio/muzikoterapie.webp",
+  moodboard: "/portfolio/muzikoterapie-moodboard.webp",
+  mockup: "/portfolio/muzikoterapie-mockup.webp",
   description:
     "Citlivě vedený prostor pro pochopení souvislostí, vnitřní orientaci a osobní změnu skrze systemické konstelace.",
   goal:
@@ -49,7 +53,8 @@ export const portfolio = [
   slug: "shizzle",
   title: "Shizzle",
   category: "Artist branding & visual identity",
-  image: "/portfolio/shizzle.webp",
+  moodboard: "/portfolio/shizzle-moodboard.webp",
+  mockup: "/portfolio/shizzle-mockup.webp",
   description:
     "Temně laděná identita rapového projektu propojující atmosféru, introspekci a filmový storytelling.",
   goal:

@@ -5,13 +5,20 @@ const { project } = Astro.props;
     <article class="group space-y-5">
 
     {/* Image */}
-    <div class="overflow-hidden rounded-4xl border border-(--muted)/30">
-        <img
-        src={project.image}
+    <div class="group relative overflow-hidden rounded-4xl border border-(--muted)/30">
+
+    <img
+        src={project.moodboard}
         alt={project.title}
-        class="aspect-16/10 w-full object-cover transition duration-700 group-hover:scale-[1.02]"
-        loading="lazy"
-        />
+        class="aspect-16/10 w-full object-cover transition-opacity duration-500 group-hover:opacity-0"
+    />
+
+    <img
+        src={project.mockup}
+        alt={project.title}
+        class="absolute inset-0 aspect-16/10 w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+    />
+
     </div>
 
     {/* Content */}
@@ -49,13 +56,22 @@ const { project } = Astro.props;
         </div>
 
         {/* CTA */}
-        <div class="pt-2">
+        <div class="flex flex-wrap gap-3 pt-2">
+
         <a
             href="https://calendly.com/mikulenka-info/45min"
             target="_blank"
-            class="tracking-cta inline-flex rounded-full bg-(--accent) px-5 py-3 text-(--background) transition hover:bg-(--accent-hover)">
+            class="tracking-cta inline-flex rounded-full bg-(--accent) px-5 py-3 text-(--background) transition hover:bg-(--accent-hover)"
+        >
             Chci podobný směr
         </a>
+
+        <span
+        class="tracking-cta inline-flex cursor-not-allowed rounded-full border border-(--accent) px-5 py-3 opacity-60 hover:opacity-80"
+        >
+        Live – brzy
+        </span>
+
         </div>
 
     </div>
