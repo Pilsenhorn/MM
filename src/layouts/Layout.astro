@@ -4,36 +4,56 @@ import "../styles/global.css";
 const siteUrl = "https://mikulenka.dev";
 const pageTitle = "Tvorba firemních webů bez šablon | Mikulenka Web studio";
 const pageDescription = "Tvorba moderních firemních webů bez šablon. Důraz na důvěru, jasnost a charakter značky.";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Person",
-      name: "Michal Mikulenka",
-      url: siteUrl,
-      jobTitle: "Designer a vývojář firemních webů",
-	  image: `${siteUrl}/og-image.webp`,
-      sameAs: [
-        "https://www.linkedin.com/in/michal-mikulenka-4b8939330"
+      "@type": "LocalBusiness",
+      "@id": `${siteUrl}/#organization`,
+      "name": "Mikulenka Web studio",
+      "url": siteUrl,
+      "logo": `${siteUrl}/favicon.svg`,
+      "image": `${siteUrl}/og-image.webp`,
+      "description": pageDescription,
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CZ"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/michal-mikulenka-4b8939330",
+        "https://www.instagram.com/mikulenka.dev/"
       ]
     },
     {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      "name": "Michal Mikulenka",
+      "url": siteUrl,
+      "jobTitle": "Designer a vývojář firemních webů",
+      "image": `${siteUrl}/og-image.webp`,
+      "worksFor": {
+        "@id": `${siteUrl}/#organization`
+      }
+    },
+    {
       "@type": "Service",
-      serviceType: "Tvorba firemních webů",
-	  url: siteUrl,
-      provider: {
-        "@type": "Person",
-        name: "Michal Mikulenka"
+      "serviceType": "Tvorba firemních webů",
+      "url": siteUrl,
+      "provider": {
+        "@id": `${siteUrl}/#organization`
       },
-      areaServed: {
+      "areaServed": {
         "@type": "Country",
-        name: "Czech Republic"
+        "name": "Czech Republic"
       },
-      description:
-        "Tvorba moderních firemních webů bez šablon. Důraz na důvěru, jasnost a charakter značky.",
+      "description": pageDescription
     }
   ]
 };
+---
+
 ---
 
 <!doctype html>
