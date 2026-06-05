@@ -2,14 +2,14 @@
 import "../styles/global.css";
 
 const siteUrl = "https://mikulenka.dev";
-const pageTitle = "Tvorba firemních webů bez šablon | Mikulenka Web studio";
-const pageDescription = "Tvorba moderních firemních webů bez šablon. Důraz na důvěru, jasnost a charakter značky.";
+const pageTitle = "Tvorba webů bez šablon | Mikulenka Web studio";
+const pageDescription = "Autorský design bez šablon pro firmy a značky. Zjistěte, proč vaši klienti odpadávají a získejte moderní web postavený na důvěře, jasnosti a výsledcích.";
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "@id": `${siteUrl}/#organization`,
       "name": "Mikulenka Web studio",
       "url": siteUrl,
@@ -17,12 +17,16 @@ const jsonLd = {
       "image": `${siteUrl}/og-image.webp`,
       "description": pageDescription,
       "priceRange": "$$",
+      "taxID": "11691514", 
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "CZ"
       },
+      "founder": {
+        "@id": `${siteUrl}/#person`
+      },
       "sameAs": [
-        "https://www.linkedin.com/in/michal-mikulenka-4b8939330",
+        "https://www.linkedin.com/in/michalmikulenka",
         "https://www.instagram.com/mikulenka.dev/"
       ]
     },
@@ -33,6 +37,10 @@ const jsonLd = {
       "url": siteUrl,
       "jobTitle": "Designer a vývojář firemních webů",
       "image": `${siteUrl}/og-image.webp`,
+      "sameAs": [
+        "https://www.linkedin.com/in/michalmikulenka",
+		"https://www.instagram.com/mikulenka.dev/"
+      ],
       "worksFor": {
         "@id": `${siteUrl}/#organization`
       }
@@ -44,14 +52,21 @@ const jsonLd = {
       "provider": {
         "@id": `${siteUrl}/#organization`
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Czech Republic"
-      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Czech Republic"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Praha"
+        }
+      ],
       "description": pageDescription
     }
-  ]
+  ],
 };
+
 ---
 
 <!doctype html>
@@ -63,6 +78,7 @@ const jsonLd = {
 		<link rel="canonical" href={siteUrl} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<meta name="author" content="Michal Mikulenka | Mikulenka Web Studio" />
 		<meta name="description" content={pageDescription} />
 		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={pageDescription} />
